@@ -1,0 +1,120 @@
+#survey {
+  height: 81%;
+  background-image: url("../images/banner-end.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.survey-txt{
+  width: 500px;
+  height: 500px;
+  margin-left: 70px;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 25px;
+}
+
+.survey-txt-header {
+  color: rgb(246, 175, 37);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+#requested-hike {
+  color: white;
+}
+
+#hr-line {
+  margin-left: -1px;
+}
+
+.survey-txt-body {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.survey-form-section {
+  flex: 1;
+  height: 500px;
+  margin-right: 70px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: -5px;
+}
+
+.survey-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50px;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.full-name, .number-of-traveler, .duration {
+  margin-right: -30px;
+}
+
+.email-add, .destination, .additional {
+  margin-right: -32px;
+}
+
+#name, #email, #number {
+  width: 90%;
+  height: 45px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#dropdown {
+  width: 92%;
+  height: 51px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#name-label, #email-label, #number-label, #dropdown-label, #notes-label {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.duration, .additional {
+  margin-top: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.survey-notes {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 255px;
+}
+
+#notes {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  height: 110px;
+  width: 99.3%;
+}
+
+#submit-button {
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: rgb(246, 175, 37);
+  color: white;
+  height: 40px;
+  width: 140px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  border-radius: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+#submit-button:hover {
+  color: black;
+}

@@ -1,0 +1,144 @@
+#header {
+  height: 70px;
+  background-color: black;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  padding: 0;
+}
+
+.left-section {
+  background-color: black;
+  width: 400px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 55px;
+}
+
+#header-img {
+  height: 50px;
+}
+
+.company-name-first {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.company-name-second {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(246, 175, 37);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.nav-bar {
+  margin-right: 55px;
+}
+
+.nav-bar ul {
+  margin:0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-bar li {
+  list-style: none;
+}
+
+.nav-bar li a {
+  padding: 1.5rem;
+  display: block;
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-link:hover {
+  color: rgb(246, 175, 37);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.22rem;
+  right: 75px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 950px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-bar {
+    display: none;
+    width: 100%;
+    background-color: black;
+    
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .left-section {
+    
+    margin-top: 10px;
+
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-bar li {
+    text-align: center;
+  }
+
+  .nav-bar li a {
+    padding: .5rem 1rem;
+  }
+
+  .banner-txt {
+    margin-top: 60px;
+  }
+
+  .nav-bar.active {
+    display: flex;
+  }
+
+  .banner-txt {
+    width: 690px;
+  }
+}
+
+
